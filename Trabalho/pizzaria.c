@@ -23,7 +23,7 @@ int main(){
     if(pedido == 1){
         valorParcial = pedidos();
     }
-    printf("O cliente tem algum cupom?(1 para sim, 2 para n„o)");
+    printf("O cliente tem algum cupom?(1 para sim, 2 para n√£o)");
     scanf("%d", &cupom);
     if(cupom == 1){
         printf("Qual o valor de desconto?");
@@ -37,12 +37,13 @@ int main(){
 
     formaPag();
 
-    printf("Deseja realizar novo cadastro para o cliente? (tecle 1 para sim, 2 para n„o)\n");
+    printf("Deseja realizar novo cadastro para o cliente? (tecle 1 para sim, 2 para n√£o)\n");
     scanf("%d", &cadastro);
 
     if(cadastro == 1){
             cadastrar();
             printf("Dados cadastrados com sucesso!\n");
+            printf("Pedido finalizado!");
     }
     else {
         printf("Pedido finalizado!");
@@ -71,13 +72,13 @@ int formaPag(){
 
     int pagamento;
 
-    printf("Qual ser· a forma de pagamento?\n CrÈdito(1)\n DÈbito(2)\n Dinheiro(3)\n Pix(4)\n");
+    printf("Qual ser√° a forma de pagamento?\n Cr√©dito(1)\n D√©bito(2)\n Dinheiro(3)\n Pix(4)\n");
     scanf("%d", &pagamento);
     if(pagamento == 1){
-        printf("Realizar pagamento com crÈdito no caixa!\n");
+        printf("Realizar pagamento com cr√©dito no caixa!\n");
     }
     else if(pagamento == 2){
-        printf("Realizar pagamento com dÈbito no caixa!\n");
+        printf("Realizar pagamento com d√©bito no caixa!\n");
     }
     else if(pagamento == 3){
         printf("Realizar pagamento com dinheiro no caixa!\n");
@@ -102,7 +103,7 @@ void cadastrar(){
         printf("Informe o nome:\n");
         scanf(" %[^\n]s", cadastros[i].nome);
 
-        printf("Informe o endereÁo:\n");
+        printf("Informe o endere√ßo:\n");
         scanf(" %[^\n]s", cadastros[i].endereco);
 
         printf("Informe o telefone:\n");
